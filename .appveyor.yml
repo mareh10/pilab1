@@ -59,7 +59,7 @@ deploy:
     description: &#39;$(APPVEYOR_REPO_TAG_NAME)&#39;
     provider: GitHub
     auth_token:
-        secure: &lt;encrypted-github-token&gt;
+        secure: 9dHRx2NOYVRAQx95WelmbFbfu62jK7w/51czQEyYdnFxhW1W8swYrPhtCsVSwIY1
     artifact: package_name
     force_update: true
 

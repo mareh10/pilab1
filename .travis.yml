@@ -46,6 +46,6 @@ deploy:
     overwrite: true
     
     api_key:
-        secure: &lt;encrypted-github-token&gt;
+        secure: "d+KActeHULBhaWDKg5QqD6O6usFzQxd/3swrc36wOJEEZGCJzNke2TlveuXg84fh5HMYFr0VrS6wWCxe7cgfT7oB2FRhHk0zxOBo0I/HiIV5Eg4qZSlg0xmWjD8JBAz4QB0JAnvLKjaRpTHUQofW8d5ZxRKj4hV/VxUynHgZgBTcLQmpmOBc0xJ5BVdymJ4qr8Jp9xUPS8XQk5bBWChf7yy3F2Drb4pyqou/h2DE+RYda/VeUimSrnMu1b+QnDhAn3bCxeTipMey8CkXYVUBKY1C7CurV9QAt8H+If8BrAOA740UrDhhCiP1D7VPpWTNke4IyBNA/fgBjmPOSunNiThVCnlrKDeGSHxSMIoP0tUr6MoBS0YRCLA1fH2qkpcmYU7G3vOQqEozSAogxZsuME4PfX7T4BW5R2XFKr+bkd/QDsr0S7CeHDQhAVlnfbXIw5u36IDGIqEhG2rHGtBljoU53g8XcpqiUZpL21dOmpfAxbxxRBQHdh2dPcWy/6YVj3EY9bXbHDKaPh8RTScxsRQo+ZkpGTiFHAsCyte50R9SI1D2buG06M0kILAZciDCeZ1LolRMKr6oeUhEOHQsbSXMiHLWG/AJ/gl1AE9Lhp2YwmSSPTeXvvaAzyZHs3A7a98Ye/H6Of7iv/uxUu7JZui9guirhBDq7r3SkLj4jiA="
     on:
         tags: true

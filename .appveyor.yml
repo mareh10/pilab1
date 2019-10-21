@@ -34,9 +34,9 @@ environment:
 install:
     # скрипт настройки среды и установки зависимостей:
     - call ci\appveyor\set-env.bat %TOOLCHAIN% %PLATFORM%
-    - appveyor DownloadFile &lt;url&gt; -FileName &lt;local-file&gt;
-    - 7z e -y &lt;local-file&gt; -o&lt;local-dir&gt;
-    - ...
+    #- appveyor DownloadFile &lt;url&gt; -FileName &lt;local-file&gt;
+    #- 7z e -y &lt;local-file&gt; -o&lt;local-dir&gt;
+    #- ...
     
 build_script:
     # скрипт сборки проекта:

@@ -50,17 +50,20 @@ test_script:
     - ctest -C %CONFIGURATION% --output-on-failure
     
 artifacts:
-    - path: &lt;local-package-path&gt;
-    name: package_name
+    # файлы-артефакты нужно предварительно явно указать в данной секции
+    # в терминологии AppVeyor это называется "push artifacts"
+    - path: file1.pkg
+    - path: file2.pkg
+      name: package_name
     
 deploy:
     # выкладываем tagged-коммиты на GitHub Releases:
-    description: &#39;$(APPVEYOR_REPO_TAG_NAME)&#39;
+    description: release_1
     provider: GitHub
     auth_token:
         secure: 9dHRx2NOYVRAQx95WelmbFbfu62jK7w/51czQEyYdnFxhW1W8swYrPhtCsVSwIY1
     artifact: package_name
     force_update: true
 
-on:
-    appveyor_repo_tag: true
+    on:
+        appveyor_repo_tag: true
